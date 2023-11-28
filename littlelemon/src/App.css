@@ -1,0 +1,294 @@
+* {
+  scroll-behavior: smooth;
+}
+
+/* NavbarCss */
+
+nav {
+  height: 100px;
+}
+
+#navi {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 30vh;
+  margin-left: 30vh;
+  margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 350;
+  font-size: 1.5rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* HeroSection */
+.hero {
+  display: flex;
+  height: 350px;
+  background-color: #495e57;
+  margin-bottom: 30px;
+}
+#heroH1 {
+  font-family: "Markazi Text", serif;
+  font-size: 3rem;
+  color: #f4ce14;
+}
+#heroH2 {
+  font-family: "Markazi Text", serif;
+  font-size: 2rem;
+  color: white;
+}
+#heroDesc {
+  font-family: "Karla", sans-serif;
+  font-size: 1.3 rem;
+  color: white;
+}
+#heroimg {
+  height: 22rem;
+  width: 18rem;
+  background-image: url("./Images/restauranfood.jpg");
+  background-size: cover;
+  margin-left: 15rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+}
+.left {
+  margin-left: 25vw;
+}
+button {
+  margin-top: 20px;
+  height: 40px;
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: #f4ce14;
+  border-radius: 10px;
+  border-color: #f4ce14;
+}
+
+/* Specials Css */
+.dishCard {
+  height: 28rem;
+  width: 18rem;
+  background-color: #ededee;
+  margin: 2rem;
+}
+.specialHeading {
+  display: flex;
+  justify-content: space-evenly;
+}
+section {
+  display: flex;
+}
+#menuButton {
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+}
+.specialItems {
+  display: flex;
+  justify-content: center;
+}
+#name {
+  font-size: 1rem;
+  font-family: "Karla", sans-serif;
+  margin-left: 0.5rem;
+}
+
+#cost {
+  font-size: 1rem;
+  font-family: "Karla", sans-serif;
+  color: #ed5f12f0;
+  margin-right: 0.5rem;
+}
+.dishDescription {
+  width: 13rem;
+  white-space: normal;
+  margin-left: 0.5rem;
+}
+#orderText {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+.deliverIcon {
+  margin-top: 1rem;
+  margin-left: 5rem;
+  height: 1rem;
+  width: 2rem;
+  background-image: url("./Images/motorcycle-solid.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#dishInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.orderOnline {
+  display: flex;
+  margin-top: auto;
+}
+
+/* TestimonialsCss */
+#testimonial {
+  width: 10vw;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+#testimonialHeading {
+  display: flex;
+  justify-content: center;
+  background-color: #fef4ea;
+  padding: 3rem;
+  align-items: center;
+  margin: none;
+}
+#testimonialCards {
+  background-color: #fef4ea;
+  padding: 5rem;
+  margin: none;
+  margin-bottom: 3rem;
+  justify-content: space-evenly;
+}
+#customerDetails {
+  display: flex;
+  justify-content: space-between;
+}
+.profileIcon {
+  border-radius: 50%;
+}
+.heading {
+  display: block;
+}
+
+/* AboutCss */
+#RestrauntName {
+  font-size: 3rem;
+  font-family: "Markazi Text", serif;
+  color: #495e57;
+}
+#RestrauntLocation {
+  font-size: 2.2rem;
+  font-family: "Markazi Text", serif;
+  color: #f4ce14;
+}
+.aboutText {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  width: 15rem;
+  color: #495e57;
+}
+#images {
+  position: absolute;
+  right: 25vw;
+}
+#owner1 {
+  background-image: url("./Images/Mario\ and\ Adrian\ A.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 19rem;
+  height: 22rem;
+  position: relative;
+  right: 0;
+}
+#owner2 {
+  background-image: url("./Images/Mario\ and\ Adrian\ b.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 18rem;
+  height: 23rem;
+  position: relative;
+  right: 6rem;
+  top: -5rem;
+}
+
+#restrauntDetails {
+  margin-left: 25vw;
+}
+
+/* footercss */
+.footer {
+  margin-top: 15rem;
+  background-color: #495e57;
+  padding: 2rem;
+}
+#footerContent {
+  display: flex;
+  justify-content: space-evenly;
+}
+.ambiance {
+  background-image: url("./Images/restaurant.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 3rem;
+  height: 23rem;
+  width: 12rem;
+}
+#navigationLinks {
+  list-style-type: none;
+  font-family: "Karla", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.footerHeadings {
+  font-size: 2rem;
+  font-family: "Markazi Text", serif;
+  color: white;
+}
+.links {
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+  color: white;
+}
+.websiteNav {
+  align-items: center;
+}
+#address {
+  text-decoration: none;
+  color: white;
+}
+#copyright {
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  #navi {
+    display: none;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  #heroimg {
+    display: none;
+  }
+  .specialItems {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #testimonialCards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #testimonial {
+    width: 70vw;
+    margin-bottom: 3vh;
+  }
+  #owner1,
+  #owner2 {
+    display: none;
+  }
+  #footerContent {
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+  }
+}

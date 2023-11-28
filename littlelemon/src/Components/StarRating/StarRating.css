@@ -1,0 +1,33 @@
+/* StarRating.css */
+.starRating {
+  display: inline-block;
+}
+
+.star {
+  display: inline-block;
+  margin: 0 2px;
+  text-align: center;
+  font-size: 25px;
+  color: #ffd700; /* Yellow color for stars */
+  position: relative;
+  line-height: 1; /* Ensure there is no extra space around the star */
+}
+
+.full::before,
+.half::before {
+  content: "\2605"; /* Unicode character for a filled star */
+  display: inline-block;
+  overflow: hidden;
+  color: #ffd700; /* Yellow color for stars */
+}
+
+.half::before {
+  width: 50%;
+  background: linear-gradient(
+    to right,
+    #ffd700 0%,
+    #ffd700 50%,
+    transparent 50%,
+    transparent 100%
+  );
+}
