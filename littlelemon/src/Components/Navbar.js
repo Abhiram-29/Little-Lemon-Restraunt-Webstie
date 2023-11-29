@@ -1,33 +1,35 @@
-import logoImg from "../Images/Logo.svg";
-import "./About";
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "../Images/Logo.svg";
+
 function Navbar() {
+  const navRef = useRef();
+
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
+
   return (
-    <nav>
-      <ul id="navi">
-        <li>
-          {" "}
-          <img src={logoImg} alt="Brand logo"></img>
-        </li>
-        <li>
-          <a>Home</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a>Menu</a>
-        </li>
-        <li>
-          <a>Reservations</a>
-        </li>
-        <li>
-          <a>Order Online</a>
-        </li>
-        <li>
-          <a>Login</a>
-        </li>
-      </ul>
-    </nav>
+    <header>
+      <h3>
+        <img src={logo} alt="Restraunt Logo" />
+      </h3>
+      <nav ref={navRef}>
+        <a href="/#">Home</a>
+        <a href="/#about">About</a>
+        <a href="/#speicalsComp">Menu</a>
+        <a href="/#">Reservations</a>
+        <a href="/#">Order Online</a>
+        <a href="/#">Login</a>
+        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+          <FaTimes />
+        </button>
+      </nav>
+      <button className="nav-btn" onClick={showNavbar}>
+        <FaBars />
+      </button>
+    </header>
   );
 }
+
 export default Navbar;

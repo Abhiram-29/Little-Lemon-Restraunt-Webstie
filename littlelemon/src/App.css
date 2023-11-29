@@ -4,33 +4,102 @@
 
 /* NavbarCss */
 
-nav {
-  height: 100px;
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
 }
 
-#navi {
+:root {
+  --mainColor: #fff;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #db2b39;
+  --textColor: #000;
+}
+
+header {
   display: flex;
-  list-style-type: none;
   align-items: center;
   justify-content: space-between;
-  margin-right: 30vh;
-  margin-left: 30vh;
-  margin-bottom: 50px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 350;
-  font-size: 1.5rem;
-}
-a {
-  text-decoration: none;
-  color: black;
+  height: 80px;
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+  color: var(--textColor);
 }
 
+nav a {
+  margin: 0 1rem;
+  color: var(--textColor);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--secondaryColor);
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+header div,
+nav {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  header nav {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    transition: 1s;
+  }
+
+  header .responsive_nav {
+    transform: translateY(100vh);
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+}
 /* HeroSection */
 .hero {
   display: flex;
   height: 350px;
   background-color: #495e57;
-  margin-bottom: 30px;
+  margin-bottom: 38px;
+  padding-top: 1rem;
 }
 #heroH1 {
   font-family: "Markazi Text", serif;
@@ -71,11 +140,14 @@ button {
 }
 
 /* Specials Css */
+#specialsComp {
+  margin-top: 1rem;
+}
 .dishCard {
   height: 28rem;
   width: 18rem;
   background-color: #ededee;
-  margin: 2rem;
+  margin: 4rem;
 }
 .specialHeading {
   display: flex;
@@ -134,7 +206,7 @@ section {
 
 /* TestimonialsCss */
 #testimonial {
-  width: 10vw;
+  width: 15vw;
   background-color: white;
   padding: 1.5rem;
   border-radius: 2rem;
@@ -212,7 +284,7 @@ section {
 
 /* footercss */
 .footer {
-  margin-top: 15rem;
+  margin-top: 20rem;
   background-color: #495e57;
   padding: 2rem;
 }
@@ -290,5 +362,15 @@ section {
     flex-direction: column;
     align-items: start;
     justify-content: left;
+  }
+  .footer {
+    margin-top: 2rem;
+  }
+  #restrauntDetails {
+    margin-left: 5vw;
+  }
+  .hero button {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }

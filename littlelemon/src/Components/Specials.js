@@ -9,7 +9,7 @@ function SpecialsCard({ imageUrl, description, dishName, dishPrice }) {
     backgroundImage: `url(${imageUrl})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    margin: "none",
+    marginBottom: "1rem",
   };
   return (
     <div className="dishCard">
@@ -39,7 +39,7 @@ function Specials() {
   const desertDesc =
     "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.";
   return (
-    <main>
+    <main id="speicalsComp">
       <div className="specialHeading">
         <h1>Today's Specials</h1>
         <button onClick={handleClick} id="menuButton">

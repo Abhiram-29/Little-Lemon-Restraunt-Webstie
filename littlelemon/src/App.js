@@ -12,11 +12,6 @@ function App() {
   if (section) {
     return (
       <>
-        <meta
-          name="description"
-          content="Little lemon is a family owned medeterrian restraunt based in Chicago"
-        />
-        <meta name="og:title" content="Little Lemon" />
         <Navbar />
         <HeroSection />
         <Specials />
