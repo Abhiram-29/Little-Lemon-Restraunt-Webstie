@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 function BookingForm(props) {
   // const [date, setDate] = useState("");
   // const [times, setTimes] = useState("");
