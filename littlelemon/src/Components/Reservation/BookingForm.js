@@ -18,7 +18,11 @@ function BookingForm(props) {
   return (
     <div id="BookingForm">
       <section id="bookingSection">
-        <form onSubmit={handleSubmit} id="bookingForm">
+        <form
+          onSubmit={handleSubmit}
+          id="bookingForm"
+          data-testid="bookingForm"
+        >
           <h1>Reserve a Table</h1>
           <fieldset>
             <div>
@@ -34,7 +38,8 @@ function BookingForm(props) {
             <div>
               <label htmlFor="TimeSelect">Choose Time Slot</label>
               <select
-                id="book=time"
+                id="TimeSelect"
+                required
                 value={props.times}
                 onChange={(e) => props.setTimes(e.target.value)}
               >
@@ -47,7 +52,7 @@ function BookingForm(props) {
             <div>
               <label htmlFor="bookGuests">Number of Guests</label>
               <input
-                id="guests"
+                id="bookGuests"
                 min={1}
                 required
                 value={props.guests}
