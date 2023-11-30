@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../Images/Logo.svg";
+import { Link, Router } from "react-router-dom";
 
 function Navbar() {
   const navRef = useRef();
@@ -18,7 +19,7 @@ function Navbar() {
         <a href="/#">Home</a>
         <a href="/#about">About</a>
         <a href="/#speicalsComp">Menu</a>
-        <a href="/#">Reservations</a>
+        <a href="/#Main">Reservations</a>
         <a href="/#">Order Online</a>
         <a href="/#">Login</a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>

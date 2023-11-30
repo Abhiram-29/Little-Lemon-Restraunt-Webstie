@@ -13,7 +13,9 @@ function HeroSection() {
           <br /> restraunt, focused on traditional recipies
           <br /> served with a modern twist.
         </article>
-        <button onClick={handleClick}>Reserve a Table</button>
+        <a href="/#Main">
+          <button onClick={handleClick}>Reserve a Table</button>
+        </a>
       </div>
       <div id="heroimg"></div>
     </section>

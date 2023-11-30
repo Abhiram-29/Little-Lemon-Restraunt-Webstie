@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
 * {
   scroll-behavior: smooth;
 }
@@ -10,7 +13,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Markazi Text", sans-serif;
 }
 
 :root {
@@ -34,6 +37,7 @@ nav a {
   margin: 0 1rem;
   color: var(--textColor);
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 nav a:hover {
@@ -49,7 +53,7 @@ header .nav-btn {
   color: var(--textColor);
   visibility: hidden;
   opacity: 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 header div,
@@ -144,7 +148,7 @@ button {
   margin-top: 1rem;
 }
 .dishCard {
-  height: 28rem;
+  height: 24rem;
   width: 18rem;
   background-color: #ededee;
   margin: 4rem;
@@ -165,25 +169,25 @@ section {
   display: flex;
   justify-content: center;
 }
-#name {
+#name,
+#cost {
   font-size: 1rem;
   font-family: "Karla", sans-serif;
   margin-left: 0.5rem;
 }
 
 #cost {
-  font-size: 1rem;
-  font-family: "Karla", sans-serif;
   color: #ed5f12f0;
-  margin-right: 0.5rem;
 }
 .dishDescription {
   width: 13rem;
+  font-family: "Karla", sans-serif;
   white-space: normal;
   margin-left: 0.5rem;
 }
 #orderText {
   font-size: 1rem;
+  font-family: "Karla", sans-serif;
   margin-left: 0.5rem;
 }
 .deliverIcon {
@@ -235,6 +239,13 @@ section {
 }
 .heading {
   display: block;
+}
+h3 {
+  font-family: "Markazi Text", sans-serif;
+}
+
+#testimonial article {
+  font-family: "Karla", sans-serif;
 }
 
 /* AboutCss */
@@ -330,12 +341,97 @@ section {
   color: white;
 }
 
+/* bookingForm CSS */
+
+#Main {
+  background-color: #d5f5e3;
+}
+
+#booking {
+  align-items: center;
+  justify-content: center;
+}
+
+#bookingForm {
+  padding: 10px;
+  border: 0;
+}
+#bookingForm h1 {
+  font-size: 2rem;
+  font-family: "Marakazi Text", sans-serif;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+#bookingSection {
+  align-items: center;
+  justify-content: center;
+}
+input,
+label,
+select {
+  display: block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-left: 1rem;
+  font-family: "Markazi Text", sans-serif;
+  font-size: 2rem;
+  color: black;
+}
+input {
+  width: 40vw;
+}
+fieldset {
+  border: none;
+}
+#DateSelect,
+#TimeSelect,
+#bookGuests,
+#bookOccasion {
+  background: #bdbdbd43;
+  padding: 8px 24px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+
+.Submitbtn input {
+  padding: 12px 16px;
+  margin-top: 20px;
+  background: #495e57;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.confirm {
+  margin: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.confirm h1 {
+  font-size: 3rem;
+}
+
+.confirm h2 {
+  font-size: 2.2rem;
+}
+
+.confirm h3 {
+  font-size: 1.5rem;
+  color: #36454f;
+}
+
 @media screen and (max-width: 768px) {
   #navi {
     display: none;
   }
   .hero {
     flex-direction: column;
+    height: 280px;
+  }
+  .left {
+    margin-left: 1rem;
   }
   #heroimg {
     display: none;
@@ -372,5 +468,21 @@ section {
   .hero button {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+  .confirm h1 {
+    font-size: 2rem;
+  }
+  .confirm h2 {
+    font-size: 1.8rem;
+  }
+  .Submitbtn input {
+    width: 70vw;
+    font-size: 1.5rem;
+  }
+  #navigationLinks {
+    margin-top: 0.5rem;
+  }
+  .dishCard {
+    margin: 2rem;
   }
 }
